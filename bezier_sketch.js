@@ -1,6 +1,5 @@
 function setup() {
 
-    //var myCanvas = createCanvas(winWidth, winHeight);
     var myCanvas = createCanvas(600, 600)
     myCanvas.parent("canvas_id");
     
@@ -84,6 +83,7 @@ document.querySelector("#hide_structure").addEventListener("click", function () 
             new_points.push(between_point)
 
             if(points.length == 2){
+                strokeWeight(12)
                 stroke('red')
             }
             point(between_point)
